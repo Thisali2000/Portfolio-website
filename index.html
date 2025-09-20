@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thisali Ravindya | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-900 smooth-scroll">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-lg z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <h1 class="text-2xl font-bold gradient-text">Thisali Ravindya</h1>
+        <div class="hidden md:block">
+          <ul class="flex gap-8">
+            <li><a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">About</a></li>
+            <li><a href="#skills" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Skills</a></li>
+            <li><a href="#projects" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Projects</a></li>
+            <li><a href="#experience" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Experience</a></li>
+            <li><a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Contact</a></li>
+          </ul>
+        </div>
+        <button class="md:hidden text-gray-700 mobile-menu-button">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden pb-4">
+        <ul class="flex flex-col gap-4">
+          <li><a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">About</a></li>
+          <li><a href="#skills" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Skills</a></li>
+          <li><a href="#projects" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Projects</a></li>
+          <li><a href="#experience" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Experience</a></li>
+          <li><a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="min-h-screen bg-white hero-section bg-pattern flex items-center justify-center pt-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Left Side - Text Content -->
+        <div class="text-center lg:text-left">
+          <p class="text-lg text-gray-600 mb-4">Hello, I'm</p>
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6">
+            <span class="animated-gradient-text">Thisali Ravindya</span>
+          </h1>
+          <h2 class="text-2xl md:text-3xl text-gray-700 mb-8">Computer Engineering Undergraduate</h2>
+          <p class="text-lg text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0">
+            Passionate about creating innovative solutions and exploring the intersection of technology and creativity.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a href="#contact" class="btn-primary btn-glow inline-flex items-center justify-center">
+              <i class="fas fa-download mr-2"></i>Download CV
+            </a>
+            <a href="#contact" class="btn-secondary btn-glow inline-flex items-center justify-center">
+              <i class="fas fa-envelope mr-2"></i>Contact Info
+            </a>
+          </div>
+          <div class="flex justify-center lg:justify-start gap-6 mt-8">
+            <a href="https://www.linkedin.com/in/thisali-ravindya-356628221" class="text-gray-600 hover:text-blue-600 transition-colors" target="_blank">
+              <i class="fab fa-linkedin text-2xl"></i>
+            </a>
+            <a href="https://github.com/Thisali2000" class="text-gray-600 hover:text-gray-900 transition-colors" target="_blank">
+              <i class="fab fa-github text-2xl"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Right Side - Profile Picture -->
+        <div class="flex justify-center lg:justify-end">
+          <div class="relative">
+            <div class="w-80 h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center shadow-2xl profile-picture float-animation">
+              <img src="profile6.jpg" 
+                   alt="Thisali Ravindya" 
+                   class="w-72 h-72 lg:w-80 lg:h-80 rounded-full object-cover shadow-lg border-4 border-white">
+            </div>
+            <!-- Floating elements for visual interest -->
+            <div class="absolute -top-4 -right-4 w-20 h-20 bg-blue-500 rounded-full opacity-20 animate-pulse"></div>
+            <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-purple-500 rounded-full opacity-20 animate-pulse" style="animation-delay: 1s;"></div>
+            <div class="absolute top-1/2 -right-8 w-12 h-12 bg-green-500 rounded-full opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      <div class="flex flex-col items-center text-gray-400">
+        <span class="text-sm mb-2">Get To Know More</span>
+        <i class="fas fa-chevron-down text-xl animate-bounce"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">About Me</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="w-80 h-80 mx-auto bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center">
+            <i class="fas fa-laptop-code text-6xl text-blue-600"></i>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-4 text-gray-800">Hello! I'm a passionate developer</h3>
+          <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+            I'm a Computer Engineering undergraduate at the University of Jaffna with experience in web development, 
+            computer vision, and deep learning research. Passionate about continuous learning and building impactful 
+            software solutions that make a difference.
+          </p>
+          <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+            When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
+            or sharing knowledge with the developer community.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <div class="flex items-center bg-blue-50 px-4 py-2 rounded-full">
+              <i class="fas fa-graduation-cap text-blue-600 mr-2"></i>
+              <span class="text-blue-800 font-medium">Computer Engineering</span>
+            </div>
+            <div class="flex items-center bg-purple-50 px-4 py-2 rounded-full">
+              <i class="fas fa-code text-purple-600 mr-2"></i>
+              <span class="text-purple-800 font-medium">Full-Stack Developer</span>
+            </div>
+            <div class="flex items-center bg-green-50 px-4 py-2 rounded-full">
+              <i class="fas fa-brain text-green-600 mr-2"></i>
+              <span class="text-green-800 font-medium">AI Enthusiast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Skills & Technologies</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+        <p class="text-lg text-gray-600 mt-6 max-w-2xl mx-auto">
+          Here are the technologies and tools I work with to bring ideas to life.
+        </p>
+      </div>
+      
+      <!-- Programming Languages -->
+      <div class="mb-12">
+        <h3 class="text-2xl font-semibold mb-8 text-center text-gray-800">Programming Languages</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="card-hover p-6 bg-white shadow-lg rounded-xl text-center">
+            <i class="fab fa-python text-4xl text-blue-600 mb-3"></i>
+            <h4 class="font-semibold text-gray-800">Python</h4>
+            <p class="text-sm text-gray-600">Advanced</p>
+          </div>
+          <div class="card-hover p-6 bg-white shadow-lg rounded-xl text-center">
+            <i class="fab fa-php text-4xl text-purple-600 mb-3"></i>
+            <h4 class="font-semibold text-gray-800">PHP</h4>
+            <p class="text-sm text-gray-600">Advanced</p>
+          </div>
+          <div class="card-hover p-6 bg-white shadow-lg rounded-xl text-center">
+            <i class="fab fa-js-square text-4xl text-yellow-500 mb-3"></i>
+            <h4 class="font-semibold text-gray-800">JavaScript</h4>
+            <p class="text-sm text-gray-600">Intermediate</p>
+          </div>
+          <div class="card-hover p-6 bg-white shadow-lg rounded-xl text-center">
+            <i class="fas fa-database text-4xl text-orange-600 mb-3"></i>
+            <h4 class="font-semibold text-gray-800">SQL</h4>
+            <p class="text-sm text-gray-600">Advanced</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frameworks & Tools -->
+      <div class="mb-12">
+        <h3 class="text-2xl font-semibold mb-8 text-center text-gray-800">Frameworks & Tools</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="card-hover p-6 bg-white shadow-lg rounded-xl text-center">
+            <i class="fas fa-fire text-4xl text-red-600 mb-3"></i>
+            <h4 class="font-semibold text-gray-800">Laravel</h4>
+            <p class="text-sm text-gray-600">Advanced</p>
+          </div>
+          <div class="card-hover p-6 bg-white shadow-lg rounded-xl text-center">
+            <i class="fab fa-html5 text-4xl text-orange-500 mb-3"></i>
+            <h4 class="font-semibold text-gray-800">HTML5</h4>
+            <p class="text-sm text-gray-600">Advanced</p>
+          </div>
+          <div class="card-hover p-6 bg-white shadow-lg rounded-xl text-center">
+            <i class="fab fa-css3-alt text-4xl text-blue-500 mb-3"></i>
+            <h4 class="font-semibold text-gray-800">CSS3</h4>
+            <p class="text-sm text-gray-600">Advanced</p>
+          </div>
+          <div class="card-hover p-6 bg-white shadow-lg rounded-xl text-center">
+            <i class="fas fa-brain text-4xl text-purple-600 mb-3"></i>
+            <h4 class="font-semibold text-gray-800">Deep Learning</h4>
+            <p class="text-sm text-gray-600">Intermediate</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Skills -->
+      <div>
+        <h3 class="text-2xl font-semibold mb-8 text-center text-gray-800">Additional Skills</h3>
+        <div class="flex flex-wrap justify-center gap-4">
+          <span class="px-6 py-3 bg-blue-100 text-blue-800 rounded-full font-medium">Computer Vision</span>
+          <span class="px-6 py-3 bg-green-100 text-green-800 rounded-full font-medium">Machine Learning</span>
+          <span class="px-6 py-3 bg-purple-100 text-purple-800 rounded-full font-medium">Web Development</span>
+          <span class="px-6 py-3 bg-yellow-100 text-yellow-800 rounded-full font-medium">Problem Solving</span>
+          <span class="px-6 py-3 bg-red-100 text-red-800 rounded-full font-medium">Team Collaboration</span>
+          <span class="px-6 py-3 bg-indigo-100 text-indigo-800 rounded-full font-medium">Research</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Featured Projects</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+        <p class="text-lg text-gray-600 mt-6 max-w-2xl mx-auto">
+          Here are some of my recent projects that showcase my skills and passion for development.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="card-hover project-card-enhanced bg-white shadow-xl rounded-2xl overflow-hidden">
+          <div class="h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=300&fit=crop" 
+                 alt="Institute Management System" 
+                 class="absolute inset-0 w-full h-full object-cover opacity-80">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/80 to-purple-600/80"></div>
+            <i class="fas fa-university text-6xl text-white relative z-10"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-3 text-gray-800">Institute Management System</h3>
+            <p class="text-gray-600 mb-4 leading-relaxed">
+              A comprehensive management system built with Laravel, PHP, and MySQL featuring advanced role-based access control, 
+              real-time validation, and responsive design.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Laravel</span>
+              <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">PHP</span>
+              <span class="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">MySQL</span>
+              <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Bootstrap</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="#" class="flex-1 bg-blue-600 text-white py-2 px-4 rounded-lg text-center hover:bg-blue-700 transition-colors">
+                <i class="fab fa-github mr-2"></i>GitHub
+              </a>
+              <a href="#" class="flex-1 border border-blue-600 text-blue-600 py-2 px-4 rounded-lg text-center hover:bg-blue-50 transition-colors">
+                <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card-hover project-card-enhanced bg-white shadow-xl rounded-2xl overflow-hidden">
+          <div class="h-48 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=300&fit=crop" 
+                 alt="AI Face Detection" 
+                 class="absolute inset-0 w-full h-full object-cover opacity-80">
+            <div class="absolute inset-0 bg-gradient-to-br from-green-500/80 to-teal-600/80"></div>
+            <i class="fas fa-eye text-6xl text-white relative z-10"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-3 text-gray-800">Real & Fake Face Detection</h3>
+            <p class="text-gray-600 mb-4 leading-relaxed">
+              Deep learning project using CNN models for classification of authentic vs. fake images with high accuracy 
+              and real-time processing capabilities.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Python</span>
+              <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">TensorFlow</span>
+              <span class="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">OpenCV</span>
+              <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">CNN</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="#" class="flex-1 bg-blue-600 text-white py-2 px-4 rounded-lg text-center hover:bg-blue-700 transition-colors">
+                <i class="fab fa-github mr-2"></i>GitHub
+              </a>
+              <a href="#" class="flex-1 border border-blue-600 text-blue-600 py-2 px-4 rounded-lg text-center hover:bg-blue-50 transition-colors">
+                <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="card-hover project-card-enhanced bg-white shadow-xl rounded-2xl overflow-hidden">
+          <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=300&fit=crop" 
+                 alt="E-Commerce Platform" 
+                 class="absolute inset-0 w-full h-full object-cover opacity-80">
+            <div class="absolute inset-0 bg-gradient-to-br from-purple-500/80 to-pink-600/80"></div>
+            <i class="fas fa-shopping-cart text-6xl text-white relative z-10"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-3 text-gray-800">E-Commerce Platform</h3>
+            <p class="text-gray-600 mb-4 leading-relaxed">
+              Full-stack e-commerce solution with user authentication, payment integration, inventory management, 
+              and admin dashboard.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">React</span>
+              <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Node.js</span>
+              <span class="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">MongoDB</span>
+              <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">Stripe</span>
+            </div>
+            <div class="flex gap-3">
+              <a href="#" class="flex-1 bg-blue-600 text-white py-2 px-4 rounded-lg text-center hover:bg-blue-700 transition-colors">
+                <i class="fab fa-github mr-2"></i>GitHub
+              </a>
+              <a href="#" class="flex-1 border border-blue-600 text-blue-600 py-2 px-4 rounded-lg text-center hover:bg-blue-50 transition-colors">
+                <i class="fas fa-external-link-alt mr-2"></i>Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Experience & Education</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Education -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-8 text-gray-800 flex items-center">
+            <i class="fas fa-graduation-cap text-blue-600 mr-3"></i>Education
+          </h3>
+          <div class="space-y-6">
+            <div class="card-hover p-6 bg-white shadow-lg rounded-xl">
+              <div class="flex items-start">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                  <i class="fas fa-university text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800">Bachelor of Computer Engineering</h4>
+                  <p class="text-blue-600 font-medium">University of Jaffna</p>
+                  <p class="text-gray-600">2021 - Present</p>
+                  <p class="text-sm text-gray-500 mt-2">Focus on software engineering, computer vision, and machine learning</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-8 text-gray-800 flex items-center">
+            <i class="fas fa-briefcase text-purple-600 mr-3"></i>Experience
+          </h3>
+          <div class="space-y-6">
+            <div class="card-hover p-6 bg-white shadow-lg rounded-xl">
+              <div class="flex items-start">
+                <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                  <i class="fas fa-code text-purple-600"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800">Web Developer</h4>
+                  <p class="text-purple-600 font-medium">Freelance</p>
+                  <p class="text-gray-600">2022 - Present</p>
+                  <p class="text-sm text-gray-500 mt-2">Developing full-stack web applications using Laravel, PHP, and modern frontend technologies</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card-hover p-6 bg-white shadow-lg rounded-xl">
+              <div class="flex items-start">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                  <i class="fas fa-brain text-green-600"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-800">AI Research Assistant</h4>
+                  <p class="text-green-600 font-medium">University Research Lab</p>
+                  <p class="text-gray-600">2023 - Present</p>
+                  <p class="text-sm text-gray-500 mt-2">Working on computer vision and deep learning projects for face detection and classification</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-800 text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
+        <div class="w-24 h-1 bg-white mx-auto"></div>
+        <p class="text-xl text-blue-100 mt-6 max-w-2xl mx-auto">
+          I'm always interested in new opportunities and exciting projects. Let's connect!
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-2xl font-semibold mb-6">Let's work together</h3>
+          <p class="text-lg text-blue-100 mb-8 leading-relaxed">
+            Whether you have a project in mind, want to collaborate, or just want to say hello, 
+            I'd love to hear from you. Feel free to reach out through any of the channels below.
+          </p>
+          
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                <i class="fas fa-envelope text-white"></i>
+              </div>
+              <div>
+                <p class="font-medium">Email</p>
+                <a href="mailto:your@email.com" class="text-blue-200 hover:text-white transition-colors">your@email.com</a>
+              </div>
+            </div>
+            
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                <i class="fab fa-github text-white"></i>
+              </div>
+              <div>
+                <p class="font-medium">GitHub</p>
+                <a href="https://github.com/yourusername" class="text-blue-200 hover:text-white transition-colors">github.com/yourusername</a>
+              </div>
+            </div>
+            
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                <i class="fab fa-linkedin text-white"></i>
+              </div>
+              <div>
+                <p class="font-medium">LinkedIn</p>
+                <a href="https://linkedin.com/in/yourusername" class="text-blue-200 hover:text-white transition-colors">linkedin.com/in/yourusername</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+          <form class="contact-form space-y-6">
+            <div>
+              <label class="block text-sm font-medium mb-2">Name</label>
+              <input type="text" name="name" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/50" placeholder="Your Name" required>
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">Email</label>
+              <input type="email" name="email" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/50" placeholder="your@email.com" required>
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">Message</label>
+              <textarea name="message" rows="4" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/50" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="w-full bg-white text-blue-600 py-3 px-6 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-gray-400">&copy; 2024 Your Name. All rights reserved.</p>
+      <p class="text-gray-500 text-sm mt-2">Built with ❤️ using HTML, CSS, and JavaScript</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
